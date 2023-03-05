@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingModal = false
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button(action: {
+                        self.isShowingModal.toggle()
+                    }) {
+                        Text("Wyświetl ekran modalny")
+                    }
+                    .sheet(isPresented: $isShowingModal) {
+                        addDrinkig()
+                    }
         }
         .padding()
     }

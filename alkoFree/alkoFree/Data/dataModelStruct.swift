@@ -14,6 +14,7 @@ struct User{
     var weight : Double
     var height : Double
     var age : Double
+    var userName : String
 }
 //Struktura "Drink":
 

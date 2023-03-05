@@ -22,9 +22,9 @@ class AlcoholRate{
         // zdefiniowanie parametrów dka kobiet i mężczyzn
         let alcoholDensity = 0.806
         let alcoholWaterRatio = 1.2
-        let bodyWaterRatioMale = 0.58
-        let bodyWaterRatioFemale = 0.49
-        let metabolicRate = 0.017
+//        let bodyWaterRatioMale = 0.58
+//        let bodyWaterRatioFemale = 0.49
+//        let metabolicRate = 0.017
         // Obliczenie współczynnika korekcyjnego r
         var correctionFactor: Double
         if gender == "male" {

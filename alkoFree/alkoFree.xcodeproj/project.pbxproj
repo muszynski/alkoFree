@@ -13,6 +13,8 @@
 		CD1E71DE29B4E6C300F9AC31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */; };
 		CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */; };
 		CD1E71E929B4ED3800F9AC31 /* calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E829B4ED3800F9AC31 /* calculations.swift */; };
+		CD1E71EC29B5164700F9AC31 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71EB29B5164700F9AC31 /* userInfo.swift */; };
+		CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModelStruct.swift; sourceTree = "<group>"; };
 		CD1E71E829B4ED3800F9AC31 /* calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculations.swift; sourceTree = "<group>"; };
+		CD1E71EB29B5164700F9AC31 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDrinkig.swift; sourceTree = "<group>"; };
+		CD1E71EF29B51E9C00F9AC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +60,11 @@
 		CD1E71D529B4E6C200F9AC31 /* alkoFree */ = {
 			isa = PBXGroup;
 			children = (
+				CD1E71EF29B51E9C00F9AC31 /* Info.plist */,
+				CD1E71EA29B5162300F9AC31 /* Views */,
 				CD1E71E729B4EC7200F9AC31 /* AppLogic */,
 				CD1E71E429B4E75100F9AC31 /* Data */,
 				CD1E71D629B4E6C200F9AC31 /* alkoFreeApp.swift */,
-				CD1E71D829B4E6C200F9AC31 /* ContentView.swift */,
 				CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */,
 				CD1E71DC29B4E6C300F9AC31 /* Preview Content */,
 			);
@@ -87,6 +93,16 @@
 				CD1E71E829B4ED3800F9AC31 /* calculations.swift */,
 			);
 			path = AppLogic;
+			sourceTree = "<group>";
+		};
+		CD1E71EA29B5162300F9AC31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E71EB29B5164700F9AC31 /* userInfo.swift */,
+				CD1E71D829B4E6C200F9AC31 /* ContentView.swift */,
+				CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */,
 				CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */,
 				CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */,
 				CD1E71D729B4E6C200F9AC31 /* alkoFreeApp.swift in Sources */,
+				CD1E71EC29B5164700F9AC31 /* userInfo.swift in Sources */,
 				CD1E71E929B4ED3800F9AC31 /* calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +312,13 @@
 				DEVELOPMENT_TEAM = 5NMXNJ3368;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = alkoFree/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alko Counter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,11 +343,13 @@
 				DEVELOPMENT_TEAM = 5NMXNJ3368;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = alkoFree/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alko Counter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
