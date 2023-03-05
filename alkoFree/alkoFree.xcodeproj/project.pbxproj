@@ -11,6 +11,7 @@
 		CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71D829B4E6C200F9AC31 /* ContentView.swift */; };
 		CD1E71DB29B4E6C300F9AC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */; };
 		CD1E71DE29B4E6C300F9AC31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */; };
+		CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CD1E71D829B4E6C200F9AC31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModelStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		CD1E71D529B4E6C200F9AC31 /* alkoFree */ = {
 			isa = PBXGroup;
 			children = (
+				CD1E71E429B4E75100F9AC31 /* Data */,
 				CD1E71D629B4E6C200F9AC31 /* alkoFreeApp.swift */,
 				CD1E71D829B4E6C200F9AC31 /* ContentView.swift */,
 				CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD1E71E429B4E75100F9AC31 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */,
+				CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */,
 				CD1E71D729B4E6C200F9AC31 /* alkoFreeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
