@@ -18,6 +18,7 @@ struct addDrinkig: View {
     @State private var dateStart = Date.now
     @State private var endDate = Date.now
     @State private var alcoholMl = 123
+    @State private var stringAlcoholMl = ""
     let ageRange = Array(18...100)
     
     var body: some View {
@@ -75,34 +76,14 @@ struct addDrinkig: View {
                     
                 }
                 HStack{
-                    Text("Ile czystego alkoholu było pite?")
-                    TextField("Wpisz swoją wagę", text: $stringHeight)
-                }
-                VStack{
-                    Button(action: {
-                        // akcja wykonywana po kliknięciu przycisku
-                        let user = UserInfo(gender: gender, weight: Double(weight), height: Double(height), age: Double(selectedAge), userName: "username")
-                        let drink = Drink(name: "Example drink", alcoholConcentration: 5.0, volume: 200, otherParameters: [:])
-                        let measurement = Measurement(user: user, drink: drink, measurementTime: Date(), result: 0, stomachState: "empty", startDate: dateStart, endDate: endDate)
-                        do {
-                                                try viewContext.save()
-                                            } catch {
-                                                print("Error saving measurement: \(error.localizedDescription)")
-                                            }
-                    }) {
-                        Text("Przycisk")
-                            .foregroundColor(.white)
-                            .padding()
+                    Text("Ile pite?")
+                    TextField("Wpisz ml", text: $stringAlcoholMl)
                     }
-                    .buttonStyle(PlainButtonStyle())
-                    .background(Color.red)
-                    .cornerRadius(8)
                 }
                 
             }
         }
     }
-}
 
 
 struct addDrinkig_Previews: PreviewProvider {

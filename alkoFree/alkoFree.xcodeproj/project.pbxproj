@@ -11,7 +11,6 @@
 		CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71D829B4E6C200F9AC31 /* ContentView.swift */; };
 		CD1E71DB29B4E6C300F9AC31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */; };
 		CD1E71DE29B4E6C300F9AC31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */; };
-		CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */; };
 		CD1E71E929B4ED3800F9AC31 /* calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E829B4ED3800F9AC31 /* calculations.swift */; };
 		CD1E71EC29B5164700F9AC31 /* userInfoWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71EB29B5164700F9AC31 /* userInfoWelcome.swift */; };
 		CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */; };
@@ -27,7 +26,6 @@
 		CD1E71D829B4E6C200F9AC31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD1E71DA29B4E6C300F9AC31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModelStruct.swift; sourceTree = "<group>"; };
 		CD1E71E829B4ED3800F9AC31 /* calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculations.swift; sourceTree = "<group>"; };
 		CD1E71EB29B5164700F9AC31 /* userInfoWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoWelcome.swift; sourceTree = "<group>"; };
 		CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDrinkig.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		CD1E71E429B4E75100F9AC31 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */,
 				CD6C9AF929B5418100EDE024 /* Model.xcdatamodeld */,
 				CD6C9AFF29B6486900EDE024 /* addDatatoDB.swift */,
 				CD6C9B0129B65CA300EDE024 /* persistanceController.swift */,
@@ -195,7 +192,6 @@
 				CD6C9B0029B6486900EDE024 /* addDatatoDB.swift in Sources */,
 				CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */,
 				CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */,
-				CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */,
 				CD6C9B0229B65CA300EDE024 /* persistanceController.swift in Sources */,
 				CD6C9AFB29B5418100EDE024 /* Model.xcdatamodeld in Sources */,
 				CD1E71D729B4E6C200F9AC31 /* alkoFreeApp.swift in Sources */,
