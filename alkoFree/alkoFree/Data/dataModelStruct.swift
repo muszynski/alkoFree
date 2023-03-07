@@ -9,7 +9,7 @@ import Foundation
 
 //Struktura "User":
 
-struct User{
+struct UserInfo{
     var gender : String
     var weight : Double
     var height : Double
@@ -27,16 +27,18 @@ struct Drink {
 
 // Struktura Measurement
 struct Measurement {
-    var user: User
+    var user: UserInfo
     var drink: Drink
     var measurementTime: Date
     var result: Double
     var stomachState: String
+    var startDate : Date
+    var endDate : Date
 }
 
 //Struktura "Database":
 struct Database{
-    var user : [User]
+    var user : [UserInfo]
     var drink : [Drink]
     var measurement : [Measurement]
 }

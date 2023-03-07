@@ -13,8 +13,12 @@
 		CD1E71DE29B4E6C300F9AC31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */; };
 		CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */; };
 		CD1E71E929B4ED3800F9AC31 /* calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71E829B4ED3800F9AC31 /* calculations.swift */; };
-		CD1E71EC29B5164700F9AC31 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71EB29B5164700F9AC31 /* userInfo.swift */; };
+		CD1E71EC29B5164700F9AC31 /* userInfoWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71EB29B5164700F9AC31 /* userInfoWelcome.swift */; };
 		CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */; };
+		CD6C9AFB29B5418100EDE024 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD6C9AF929B5418100EDE024 /* Model.xcdatamodeld */; };
+		CD6C9AFE29B54B1D00EDE024 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = CD6C9AFD29B54B1D00EDE024 /* SwiftUICharts */; };
+		CD6C9B0029B6486900EDE024 /* addDatatoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C9AFF29B6486900EDE024 /* addDatatoDB.swift */; };
+		CD6C9B0229B65CA300EDE024 /* persistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C9B0129B65CA300EDE024 /* persistanceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +29,12 @@
 		CD1E71DD29B4E6C300F9AC31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModelStruct.swift; sourceTree = "<group>"; };
 		CD1E71E829B4ED3800F9AC31 /* calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculations.swift; sourceTree = "<group>"; };
-		CD1E71EB29B5164700F9AC31 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		CD1E71EB29B5164700F9AC31 /* userInfoWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoWelcome.swift; sourceTree = "<group>"; };
 		CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDrinkig.swift; sourceTree = "<group>"; };
 		CD1E71EF29B51E9C00F9AC31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CD6C9AFA29B5418100EDE024 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CD6C9AFF29B6486900EDE024 /* addDatatoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDatatoDB.swift; sourceTree = "<group>"; };
+		CD6C9B0129B65CA300EDE024 /* persistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persistanceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6C9AFE29B54B1D00EDE024 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				CD1E71E529B4E83E00F9AC31 /* dataModelStruct.swift */,
+				CD6C9AF929B5418100EDE024 /* Model.xcdatamodeld */,
+				CD6C9AFF29B6486900EDE024 /* addDatatoDB.swift */,
+				CD6C9B0129B65CA300EDE024 /* persistanceController.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -98,7 +109,7 @@
 		CD1E71EA29B5162300F9AC31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD1E71EB29B5164700F9AC31 /* userInfo.swift */,
+				CD1E71EB29B5164700F9AC31 /* userInfoWelcome.swift */,
 				CD1E71D829B4E6C200F9AC31 /* ContentView.swift */,
 				CD1E71ED29B518DE00F9AC31 /* addDrinkig.swift */,
 			);
@@ -121,6 +132,9 @@
 			dependencies = (
 			);
 			name = alkoFree;
+			packageProductDependencies = (
+				CD6C9AFD29B54B1D00EDE024 /* SwiftUICharts */,
+			);
 			productName = alkoFree;
 			productReference = CD1E71D329B4E6C200F9AC31 /* alkoFree.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +163,9 @@
 				Base,
 			);
 			mainGroup = CD1E71CA29B4E6C200F9AC31;
+			packageReferences = (
+				CD6C9AFC29B54B1D00EDE024 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = CD1E71D429B4E6C200F9AC31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,11 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6C9B0029B6486900EDE024 /* addDatatoDB.swift in Sources */,
 				CD1E71EE29B518DE00F9AC31 /* addDrinkig.swift in Sources */,
 				CD1E71D929B4E6C200F9AC31 /* ContentView.swift in Sources */,
 				CD1E71E629B4E83E00F9AC31 /* dataModelStruct.swift in Sources */,
+				CD6C9B0229B65CA300EDE024 /* persistanceController.swift in Sources */,
+				CD6C9AFB29B5418100EDE024 /* Model.xcdatamodeld in Sources */,
 				CD1E71D729B4E6C200F9AC31 /* alkoFreeApp.swift in Sources */,
-				CD1E71EC29B5164700F9AC31 /* userInfo.swift in Sources */,
+				CD1E71EC29B5164700F9AC31 /* userInfoWelcome.swift in Sources */,
 				CD1E71E929B4ED3800F9AC31 /* calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +405,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD6C9AFC29B54B1D00EDE024 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD6C9AFD29B54B1D00EDE024 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD6C9AFC29B54B1D00EDE024 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CD6C9AF929B5418100EDE024 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD6C9AFA29B5418100EDE024 /* Model.xcdatamodel */,
+			);
+			currentVersion = CD6C9AFA29B5418100EDE024 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD1E71CB29B4E6C200F9AC31 /* Project object */;
 }

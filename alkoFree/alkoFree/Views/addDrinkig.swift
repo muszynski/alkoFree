@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct addDrinkig: View {
-    
+    @Environment(\.managedObjectContext) private var viewContext
     @State private var gender = "male"
     @State private var selectedAge = 18
     @State private var weight = 90
@@ -26,6 +26,7 @@ struct addDrinkig: View {
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
 
             }
+            .padding()
             Form {
                 
                     HStack {
@@ -80,6 +81,14 @@ struct addDrinkig: View {
                 VStack{
                     Button(action: {
                         // akcja wykonywana po kliknięciu przycisku
+                        let user = UserInfo(gender: gender, weight: Double(weight), height: Double(height), age: Double(selectedAge), userName: "username")
+                        let drink = Drink(name: "Example drink", alcoholConcentration: 5.0, volume: 200, otherParameters: [:])
+                        let measurement = Measurement(user: user, drink: drink, measurementTime: Date(), result: 0, stomachState: "empty", startDate: dateStart, endDate: endDate)
+                        do {
+                                                try viewContext.save()
+                                            } catch {
+                                                print("Error saving measurement: \(error.localizedDescription)")
+                                            }
                     }) {
                         Text("Przycisk")
                             .foregroundColor(.white)
@@ -94,6 +103,7 @@ struct addDrinkig: View {
         }
     }
 }
+
 
 struct addDrinkig_Previews: PreviewProvider {
     static var previews: some View {
